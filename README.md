@@ -29,7 +29,7 @@ ProjectNoStoryboardOnlyXIB-ObjectiveC
 1. Delete the storyBoard.
 2. Delete The main Interface, it is where you normally call your storyboard, Delete what it is inside.
 3. Allocate an UIWindow in memory, then initialize the frame with the complete mainScreen and asign to a self.window.
-4. Create an instance of FirstViewControllerClass and asign it to a firstViewController pointer
+4. Allocate FirstViewControllerClass in memory and send the message init, then asign it to a firstViewController pointer
 5. Asign firstViewController to a rootViewController.
 6. send the message makeKeyAndVisible to the self.window.
 
