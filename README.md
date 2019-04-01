@@ -3,6 +3,8 @@ ProjectNoStoryboardOnlyXIB-ObjectiveC
 
 # How does AppDelegate.h look like?
 
+## looks the pointer window
+
 ``` objective-c
 //
 //  AppDelegate.h
@@ -21,6 +23,15 @@ ProjectNoStoryboardOnlyXIB-ObjectiveC
 ```
 
 # How does it look AppDelegate.m ?
+
+## looks the pointer firstViewController
+
+1. Delete the storyBoard.
+2. Delete The main Interface, it is where you normally call your storyboard, Delete what it is inside.
+3. Allocate an UIWindow in memory, then send the message initWithFrame.
+4. Allocate FirstViewControllerClass in memory and send the message init, then asign it to a firstViewController pointer
+5. Asign firstViewController to a rootViewController.
+6. send the message makeKeyAndVisible to the self.window.
 
 ``` objective-c
 //
@@ -137,14 +148,7 @@ ProjectNoStoryboardOnlyXIB-ObjectiveC
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
 - (IBAction)presentNewViewButtonTapped:(id)sender {
     NextViewController *nextViewController = [[NextViewController alloc] initWithNibName:@"NextViewController" bundle:nil];
     [self presentViewController:nextViewController animated:YES completion:nil];
@@ -200,15 +204,6 @@ ProjectNoStoryboardOnlyXIB-ObjectiveC
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
 ```
