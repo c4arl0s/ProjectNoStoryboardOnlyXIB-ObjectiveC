@@ -3,7 +3,7 @@ ProjectNoStoryboardOnlyXIB-ObjectiveC
 
 # How does AppDelegate.h look like?
 
-## looks the pointer window
+## Looks the pointer window in Header file
 
 ``` objective-c
 //
