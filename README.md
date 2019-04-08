@@ -3,10 +3,10 @@ ProjectNoStoryboardOnlyXIB-ObjectiveC
 
 1. Delete the storyBoard.
 2. Delete The main Interface, it is where you normally call your storyboard, Delete what it is inside.
-3 Add a file FirstViewController subClass of UIViewController, and also create an xib file.
+3. Add a class FirstViewController subClass of UIViewController, and check the mark for create an xib file.
 4. Allocate an UIWindow in memory, then send the message initWithFrame.
 5. Allocate FirstViewControllerClass in memory and send the message init, then asign it to a firstViewController pointer
-6. Asign firstViewController to a rootViewController.
+6. Asign firstViewController to a self.window.rootViewController
 7. send the message makeKeyAndVisible to the self.window.
 
 # How does AppDelegate.h look like?
