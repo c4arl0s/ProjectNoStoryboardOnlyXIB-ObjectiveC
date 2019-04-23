@@ -2,9 +2,9 @@
 ProjectNoStoryboardOnlyXIB-ObjectiveC
 
 1. Delete the storyBoard and the UIViewController, m an h file, associated to it.
-2. Delete The main Interface, it is where you normally call your storyboard, Delete what it is inside.
-3. Add a class FirstViewController subClass of UIViewController, and check the mark for create an xib file.
-4. Allocate an UIWindow in memory, then send the message initWithFrame.
+2. In "main Interface" Deployment info, Delete where it appears, it is where you normally call your storyboard, Delete what it is inside.
+3. Add class file FirstViewController subClass of UIViewController, and check the mark for create an xib file.
+4. Allocate an UIWindow in memory, then send the message initWithFrame. Lets make the main Screen fill to the bounds.
 5. Allocate FirstViewControllerClass in memory and send the message init, then asign it to a firstViewController pointer
 6. Asign firstViewController to a self.window.rootViewController
 7. send the message makeKeyAndVisible to the self.window.
