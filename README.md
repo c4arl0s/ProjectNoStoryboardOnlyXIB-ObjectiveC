@@ -1,3 +1,5 @@
+# PLEASE REMEMBER TO RENAME THE CLASS 
+
 # ProjectNoStoryboardOnlyXIB-ObjectiveC
 ProjectNoStoryboardOnlyXIB-ObjectiveC
 
