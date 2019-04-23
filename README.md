@@ -1,7 +1,7 @@
 # ProjectNoStoryboardOnlyXIB-ObjectiveC
 ProjectNoStoryboardOnlyXIB-ObjectiveC
 
-1. Delete the storyBoard.
+1. Delete the storyBoard and the UIViewController, m an h file.
 2. Delete The main Interface, it is where you normally call your storyboard, Delete what it is inside.
 3. Add a class FirstViewController subClass of UIViewController, and check the mark for create an xib file.
 4. Allocate an UIWindow in memory, then send the message initWithFrame.
