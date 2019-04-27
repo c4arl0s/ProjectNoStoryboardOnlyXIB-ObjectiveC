@@ -1,6 +1,8 @@
 # ProjectNoStoryboardOnlyXIB-ObjectiveC
 ProjectNoStoryboardOnlyXIB-ObjectiveC
 
+### This is the ease way, when you just delete both, storyboard and the class ViewController.
+
 1. Delete the storyBoard and the UIViewController, m an h file, associated to it.
 2. In "main Interface" Deployment info, Delete where it appears, it is where you normally call your storyboard, Delete what it is inside.
 3. Add class file FirstViewController subClass of UIViewController, and check the mark for create an xib file.
